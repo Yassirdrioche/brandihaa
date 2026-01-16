@@ -1,6 +1,6 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/forms";
-@plugin "@tailwindcss/container-queries";
+/* @plugin "@tailwindcss/forms"; */
+/* @plugin "@tailwindcss/container-queries"; */
 
 @theme {
   --color-obsidian: #080808;

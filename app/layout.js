@@ -1,5 +1,5 @@
 
-import { Manrope, Inter, Space_Grotesk,Zalando_Sans,Bruno_Ace_SC } from "next/font/google";
+import { Manrope, Inter, Space_Grotesk,Bruno_Ace_SC } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -19,10 +19,6 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
-const zalandoSans = Zalando_Sans({
-  variable: "--font-zalando-sans",
-  subsets: ["latin"],
-});
 
 const brunoAceSC = Bruno_Ace_SC({
   weight: "400", // REQUIRED
@@ -43,7 +39,7 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${manrope.variable} ${inter.variable} ${spaceGrotesk.variable}
-         ${zalandoSans.variable} ${brunoAceSC.variable} antialiased bg-obsidian text-white no-scrollbar`}
+          ${brunoAceSC.variable} antialiased bg-obsidian text-white no-scrollbar`}
       >
         <Navbar />
         {children}
